@@ -1,0 +1,203 @@
+.app__nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    font-size: 0.6875rem;
+    height: 40px;
+    padding: 0 24px;
+    background: var(--color-nav);
+}
+
+.nav-fix{
+    position: fixed;
+    width: 100%;
+    background: var(--color-white);
+    top: 0;
+}
+
+.app__nav-logos{
+    display: flex;
+    align-items: center;
+}
+
+.app__nav-logos_menu{
+    padding: 0 6px;
+    margin-right: 6px;
+}
+
+.app__nav-logos_menu img{
+    width: 20px;
+    height: 20px; 
+}
+
+.svg-nav {
+    width: 20px;
+    height: 20px;
+}
+
+.svg-item svg{
+    width: 17px;
+    height: 17px;
+    margin: 0 2px;
+}
+
+.app__nav-logos_name {
+    padding: 0 6px;
+    margin: 0 6px;
+}
+
+.app__nav-links{
+    display: flex;
+    list-style: none; 
+    align-items: center;
+}
+
+.app__nav-links li{
+    padding: 0 6px;
+    margin: 0 6px;
+}
+
+.app__nav-links li:last-child{
+    margin-right: 0;
+}
+
+.app__nav-links_my-account,
+.app__nav-links_contact-us {
+    height: 40px;
+    display: flex;
+    align-items: center; 
+}
+
+.my-account{
+    cursor: pointer;
+}
+
+.account-fix{
+    position: fixed;
+    cursor: pointer;
+    top: 20px;
+    z-index: 15;
+    right: 170px;
+    padding-bottom: 25px;
+}
+
+.search-fix{
+    position: fixed;
+    top: 20px;
+    z-index: 15;
+    top: 20px;
+    right: 90px;
+}
+
+.cart-fix{
+    position: fixed;
+    top: 20px;
+    z-index: 15;
+    top: 20px;
+    right:30px;
+}
+
+.app__nav-links_my-account_login,
+.app__nav-links_contact-us_layer{
+    position: absolute;
+    display: none;
+    background: var(--color-white);
+
+    min-height: 17.1875rem;
+    width: 18.75rem;
+    z-index: 25;
+    border: 1px solid rgba(0,0,0,.25);
+    padding: 16px;
+    top: 40px;
+    
+    color: var(--color-black);
+    letter-spacing: 0.025rem;
+    line-height: 1.3;
+    transform: all 3s;
+}
+
+.app__nav-links_my-account_login-grid{
+    display: grid;
+    gap: 16px;
+    text-align: center;
+    justify-content: center;
+}
+
+.app__nav-links_my-account_login-grid span{
+    font-weight: 600;
+}
+
+.new-user{
+    padding-top: 16px;
+    border-top: 1px solid var(--color-nav);
+}
+
+.app__nav-links_my-account:hover .app__nav-links_my-account_login{
+    display: block; 
+    position: fixed;
+}  
+
+.app__nav-links_contact-us_layer-content{
+   display: grid; 
+   gap: 1.25rem;
+}
+
+.app__nav-links_contact-us_layer-content a{
+    text-decoration: underline;
+}
+
+.app__nav-links_contact-us_layer-content_section{
+    display: grid;
+    gap: .725rem;
+}
+
+.app__nav-links_contact-us_layer-content_item{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+.app__nav-links_contact-us:hover .app__nav-links_contact-us_layer{
+    display: block;
+}
+
+.app__nav-links_ham_li{
+    cursor: pointer;
+    display: none;
+    padding-right: 0 !important;
+}
+
+.armani-fix{
+    z-index: 30;
+    margin-top: 5px;
+    margin-left: 0;
+}
+
+.armani-fix img{
+    width: 80px;
+    height: 30px;
+}
+
+.li-cart{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+    .app__nav-links_my-account_li,
+    .app__nav-links_contact-us_li,
+    .app__nav-links_store_li{
+        display: none;
+    }
+
+    .app__nav-links_ham_li{
+        display: flex;
+    }
+
+    .search-fix, 
+    .cart-fix{
+        position: relative;
+    }
+}

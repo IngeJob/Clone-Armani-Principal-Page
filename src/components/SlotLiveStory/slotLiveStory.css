@@ -1,0 +1,35 @@
+.slot-container{
+    display: flex;
+    flex-direction: row;
+    background: var(--color-white);
+}
+
+.slot-title{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 29px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.slot-slideShow{
+    display: flex;
+    flex: 3;
+
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 787px){
+    .slot-container{
+        flex-direction: column;
+    }
+
+    .slot-title{
+        font-size: 35px;
+        padding: 2rem;  
+    }
+}

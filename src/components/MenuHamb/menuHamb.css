@@ -1,0 +1,144 @@
+.menuHamb-container{  
+    display: flex;
+    flex-direction: column;
+
+    max-width: 30rem;
+    width: 100vw;
+    height: 100%;
+    padding-top: 2.5rem;
+    background: var(--color-white);
+
+    top: 0;
+}
+
+.close-menuHamb{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+
+.close-menuHamb button{
+    font-size: 20px;
+    background: var(--color-white);
+}
+
+.svg__hamb-search,
+.svg__hamb-cart{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.svg__hamb-search{
+    top: 10px;
+    right: 130px;
+}
+
+.svg__hamb-cart{
+    top: 12px;
+    right: 80px;
+}
+
+.menuHamb-header{
+    flex: 1;
+    border-top: 1px solid var(--color-nav);
+}
+
+.menuHamb-header_ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+
+}
+
+.menuHamb-header_li{
+    padding: 12px 52px;
+    
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    line-height: 1.7rem;    
+}
+
+.no-pointer{
+    cursor: auto;
+}
+
+.menuHamb-nav{
+    display: flex;
+    flex: 2; 
+    align-items: flex-end;
+}
+
+.menuHamb-nav_ul{
+    padding: 2rem 0;
+    width: 100%;
+
+    background: var(--color-nav);
+
+    font-size: 0.6875rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    line-height: 1.7rem;
+}
+
+.menuHamb-nav_li{
+    padding: 0.5rem 1rem 0.5rem 3.25rem;
+    display: block;
+    flex-direction: row;
+    
+    align-items: flex-start;
+}
+
+.menuHamb-nav_li svg{
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.menuHamb-nav_li .plus{
+    font-size: 25px;
+}
+
+.menuHamb-nav_li .menuHamb-nav_li-item{
+    display: flex;
+    align-self: start;
+}
+
+.li-accordion{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.li-accordion_ul{
+    padding-left: 40px;
+}
+
+.li-margin{
+    padding: 1rem 0;
+}
+
+.ml-1{
+    margin-left: 1rem;
+}
+
+.arrow{
+    padding: 0 1rem 0 0;
+    cursor: pointer;
+}
+
+.ham-kind li{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.ham-kind li a{
+    font-size: 16px;
+}
+
+.ham-kind li:hover{
+    color: var(--color-hover);
+}

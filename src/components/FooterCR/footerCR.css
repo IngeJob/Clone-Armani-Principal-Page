@@ -1,0 +1,42 @@
+.footerCR-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.25rem 1rem;
+    background: var(--color-black);
+
+    font-size: 0.875rem;
+    letter-spacing: 0.025rem;
+    line-height: 1.3;
+}
+
+.footerCR__choose-country{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--color-white);
+}
+
+.cc-text{
+    text-transform: uppercase;
+}
+
+.footerCR__copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+
+    color: #959595;
+}
+
+.footerCR__copyright .cr-text, .cr-a{
+    align-self: flex-end;
+}
+
+.footerCR-container a{
+    text-decoration: underline;
+}

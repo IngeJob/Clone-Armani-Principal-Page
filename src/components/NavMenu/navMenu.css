@@ -1,0 +1,39 @@
+.navMenu-container{  
+    max-width: 30rem;
+    width: 100vw;
+    height: 100%;
+    padding: 0.625rem 4.25rem;
+    background: var(--color-nav);
+
+    top: 0;
+}
+
+.navMenu-container ul, li{
+    list-style: none;
+    flex-direction: column;
+} 
+
+.navMenu-ul{
+    display: flex;
+    padding: 1.156rem 0;
+    text-align: left;
+}
+
+.item-ul li{
+    padding: 0.5rem 0;
+}
+
+.menu-item{
+    padding: 1.156rem 0;
+}
+
+.close-menu{
+    position: absolute;
+    top: 10px;
+    right: 24px;
+}
+
+.close-menu button{
+    font-size: 30px;
+    background: var(--color-nav);
+}

@@ -1,0 +1,59 @@
+.promoBar__container{
+    max-width: 100vw;
+    margin: auto;
+    overflow: hidden;
+    background: var(--color-bg);
+}
+
+.promoBar__wrapper{
+    position: relative;
+    padding-left: 0;
+    margin: 0;
+    height: 40px;
+    overflow: hidden;
+}
+
+.promoBar__wrapper a{
+    color: var(--color-white);
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.promoBar__wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 40px;
+    
+    width: 100%;
+    top: 0;
+    animation: carousel 8s linear infinite;
+    transform: translateX(100%);
+}
+
+.promoBar__wrapper .slide-1 {
+    animation-name: first-picture, carousel;
+    animation-duration: 8s;
+    animation-iteration-count: 1, infinite;
+    animation-delay: 0s, 8s;
+    transform: translateX(0%);
+}
+
+.promoBar__wrapper .slide-2 {
+    animation-delay: Calc(8s * .5);
+}
+
+@keyframes first-picture {
+    0% { transform: translateX(0%); }
+    8%, 50% { transform: translateX(0); }
+    58%, 100% { transform: translateX(-100%); }
+}
+  
+@keyframes carousel {
+    0% { transform: translateX(100%); }
+    8%, 50% { transform: translateX(0); }
+    58%, 100% { transform: translateX(-100%); }
+}
+  
